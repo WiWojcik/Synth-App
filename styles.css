@@ -1,0 +1,98 @@
+*{
+  user-select: none;
+}
+.osc {
+  width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: solid black;
+  
+}
+.osc1{
+  display: flex;
+
+  align-items: center;
+}
+.osc2{
+  display: flex;
+  align-items: center;
+}
+
+.knob {
+  width: 100px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker {
+  width: 5px;
+  height: 30px;
+  background-color: #333;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+/*   transform: translateY(50%) rotate(0deg);
+  transition: transform 0.2s; */
+  transform: rotate(50deg);
+  cursor: pointer;
+}
+.rangeOsc{
+  display: flex;
+  flex-direction: column;
+
+}
+.rangeOsc label{
+  font-size: 15px;
+  word-spacing: 20px;
+  text-transform: capitalize;
+}
+
+/* Stylizacja kontenera suwaka */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 230px;
+  height: 20px;
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Stylizacja paska suwaka */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Stylizacja kciuka suwaka */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  background: #ffd700;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin-top: -7px;
+}
+
+/* Zmiana koloru kciuka po najechaniu */
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #ffeb3b;
+}
+
+/* Zmiana koloru kciuka po kliknięciu */
+input[type=range]::-webkit-slider-thumb:active {
+  background: #ff9800;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <button id="myButton">Press</button>
+    <div class="osc">
+        <div class="osc1">
+            <div class="rangeOsc">
+                <label for="waveinputosc1">sine square sawtooth triangle</label>
+                <input id="waveinputosc1" type="range" min="0" max="3" step="1" value="1">
+            </div>
+    
+           
+            <div class="knob" id="knob">
+                <p>HZ</p>
+                <div class="marker" id="marker"></div>
+            </div>
+        </div>
+
+
+        <div class="osc2">
+            <div class="rangeOsc">
+                <label for="waveinputosc2">sine square sawtooth triangle</label>
+                <input id="waveinputosc2" type="range" min="0" max="3" step="1">
+            </div>
+                
+            <div class="knob" id="knob2">
+                <p>HZ</p>
+                <div class="marker" id="marker2"></div>
+            </div>
+        </div>
+
+        
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+ 
+    <script type="module" src="script.js"></script>
+    <script type="module" src="knob.js"></script>
+    
+<!--     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("#myButton").mousedown(function(){
+                alert('down')
+            });
+            $("#myButton").mouseup(function(){
+                alert('up')
+            });
+        });
+    </script> -->
+</body>
+</html>
