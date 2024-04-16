@@ -8,10 +8,40 @@
     
 </head>
 <body>
-
-    <button id="myButton">Press</button>
+    <div class="nav-section" role="navigation">
+        <button id="keyMatch">KeyMatch</button>
+        <div class="keyToMatch">
+            <button id="btn-c" class="keybtn key-c">C</button>
+            <button id="btn-c#" class="keybtn key-c#">C#</button>
+            <button id="btn-d" class="keybtn key-d">D</button>
+            <button id="btn-d#" class="keybtn key-d#">D#</button>
+            <button id="btn-e" class="keybtn key-e">E</button>
+            <button id="btn-f" class="keybtn key-f">F</button>
+            <button id="btn-f#" class="keybtn key-f#">F#</button>
+            <button id="btn-g" class="keybtn key-g">G</button>
+            <button id="btn-g#" class="keybtn key-g#">G#</button>
+            <button id="btn-a" class="keybtn key-a">A</button>
+            <button id="btn-a#" class="keybtn key-a#">A#</button>
+            <button id="btn-b" class="keybtn key-b">B</button>
+            <div id="inputsKey">
+                <div id="key-c"></div> 
+                <div id="key-c#"> </div>
+                <div id="key-d"> </div>
+                <div id="key-d#"> </div>
+                <div id="key-e"> </div>
+                <div id="key-f"> </div>
+                <div id="key-f#"> </div>
+                <div id="key-g"> </div>
+                <div id="key-g#"> </div>
+                <div id="key-a"> </div>
+                <div id="key-a#"> </div>
+                <div id="key-b"> </div>
+            </div>
+        </div>
+    </div>
     <div class="osc">
         <div class="osc1">
+            
             <div class="rangeOsc">
                 <label for="waveinputosc1">sine square sawtooth triangle</label>
                 <input id="waveinputosc1" type="range" min="0" max="3" step="1" value="1">
@@ -53,17 +83,5 @@
  
     <script type="module" src="script.js"></script>
     <script type="module" src="knob.js"></script>
-    
-<!--     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        $(function(){
-            $("#myButton").mousedown(function(){
-                alert('down')
-            });
-            $("#myButton").mouseup(function(){
-                alert('up')
-            });
-        });
-    </script> -->
 </body>
 </html>
