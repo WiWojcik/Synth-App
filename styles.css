@@ -96,3 +96,23 @@ input[type=range]::-webkit-slider-thumb:hover {
 input[type=range]::-webkit-slider-thumb:active {
   background: #ff9800;
 }
+
+.nav-section{
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  border: #ff9800 solid;
+}
+.keyToMatch button{
+  width: 27.2px;
+}
+#inputsKey{
+  display: flex;
+  gap: 6.5px;
+}
+#inputsKey *{
+
+  width: 20px;
+  height: 20px;
+  border: #222 solid;
+}
